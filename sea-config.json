@@ -1,0 +1,13 @@
+{
+  "main": ".tsOut/bundle.js",
+  "output": "Build/executable.blob",
+  "disableExperimentalSEAWarning": true,
+  "useSnapshot": false,
+  "useCodeCache": true,
+  "assets": {
+    "src/assets/helpdoc": "/home/b/labubu/src/assets/helpdoc",
+    ".native/yarn.lock": "/home/b/labubu/.native/yarn.lock",
+    ".native/package.json": "/home/b/labubu/.native/package.json",
+    "LICENSE": "/home/b/labubu/LICENSE"
+  }
+}
