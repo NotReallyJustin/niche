@@ -104,6 +104,15 @@ async function Main(): Promise<void> {
         })
     }
 
-    
-    console.log(predict(process.argv.reduce((cumL, curr) => cumL + curr, "")));
+    if(process.argv[2]) {
+        console.log(predict(process.argv.reduce((cumL, curr) => cumL + curr, "")));
+    } else {
+        // read stdin
+        let buffer = ``;
+        for await (const chunk of process.stdin) {
+            buffer += chunk;
+        }
+
+        console.log(predict(buffer.trim()));
+    }
 }
